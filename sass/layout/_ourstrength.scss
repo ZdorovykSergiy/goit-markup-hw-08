@@ -1,0 +1,164 @@
+.our-strengths-section {
+  background-color: $lightest-background-color;
+}
+
+.our-strengths-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+}
+
+.our-strengths-section-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $darker-background-color;
+}
+
+.our-strengths-section-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.our-strengths-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  }
+
+.our-strengths-item-info {
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0, 03em;
+  color: $light-grey-text-color;
+}
+
+
+/*Smartphone*/ 
+
+@media screen and (max-width: 767px) {
+
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .our-strengths-item {
+
+    &:not(:last-child) {
+      margin-bottom: 30px;}
+  }
+
+
+  .our-strengths-section-pics {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .our-strengths-section-pic-1,
+  .our-strengths-section-pic-2,
+  .our-strengths-section-pic-4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .our-strengths-section-pic-3 {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .our-strengths-item-info {
+    align-items: center;
+  }
+}
+
+   /*Tablet*/ 
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .our-strengths-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .our-strengths-item {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+  
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;}
+
+    &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;} 
+  }
+
+  .our-strengths-section-pics {
+    width: 354px;
+    height: 120px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;}
+
+    &:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;} 
+  }
+  
+  .our-strengths-item-title {
+    margin-bottom: 10px;
+  }
+
+  .our-strengths-item-info {
+    
+    &:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;}
+  }
+}
+ 
+/*Desctop*/
+
+@media screen and (min-width: 1200px) {
+  
+  .our-strengths-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+
+  .our-strengths-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;}
+    }
+  
+  .our-strengths-section-pics {
+    width: 270px;
+    height: 120px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;}
+  }
+  
+  .our-strengths-item-title {
+     
+    &:not(:last-child) {
+      margin-bottom: 10px;}
+  }
+
+  .our-strengths-item-info {
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
