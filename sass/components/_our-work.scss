@@ -1,0 +1,68 @@
+.flex-container-partfolio {
+  flex-wrap: wrap;
+}
+.flex-element-partfolio {
+  background: $white-text-color;
+  border: 1px solid #eeeeee;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-top: 30px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.flex-element-partfolio:nth-child(3n) {
+  margin-right: 0;
+}
+.project-hover-focus:hover .project-text {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+.project-text-background {
+  background-color: $white-text-color;
+}
+
+.project-text {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  color: $white-text-color;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  padding-top: 65px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 65px;
+}
+.name-project {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+.partfolio-text-title {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}

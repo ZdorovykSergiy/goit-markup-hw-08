@@ -1,0 +1,145 @@
+.header-position {
+  position: relative;
+}
+
+.link-curent-item {
+  color: $akcent;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  font-family: "Raleway", sans-serif;
+
+  &:hover,
+  &:focus {
+    color: $akcent;
+  }
+}
+
+.logo-color {
+  color: $akcent;
+}
+
+.site-nav a {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.site-nav-contact {
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  transition-property: all;
+  transition-duration: 250ms;
+  letter-spacing: 0.02em;
+}
+.site-nav :hover,
+.site-nav :focus {
+  color: $akcent;
+}
+
+.button-icon-envelope {
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $akcent;
+    color: $akcent;
+  }
+}
+
+.button-text-contact {
+  padding-left: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.button-icon-smartphone {
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $akcent;
+    color: $akcent;
+  }
+}
+
+.link-current {
+  position: relative;
+  color: $akcent;
+}
+
+.link-current::after {
+  content: "";
+  width: 100%;
+  background: $akcent;
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.menu-button {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  fill: #000000;
+  &:hover {
+    fill: #2196f3;
+  }
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-close-menu {
+  display: block;
+  fill: black;
+}
+.menu-button .icon-close-menu {
+  display: none;
+}
+.page-header .nav-address {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 60px;
+  width: 100%;
+}
